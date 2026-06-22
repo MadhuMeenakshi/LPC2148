@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\led.o"
+--strict --scatter ".\proteus_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\proteus_LED.map" -o .\proteus_LED.axf
