@@ -1,7 +1,7 @@
 --cpu ARM7TDMI
 ".\startup.o"
-".\led.o"
---strict --scatter ".\proteus_LED.sct"
+".\button_counter.o"
+--strict --scatter ".\push_button.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
---list ".\proteus_LED.map" -o .\proteus_LED.axf
+--list ".\push_button.map" -o .\push_button.axf
